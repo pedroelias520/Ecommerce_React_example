@@ -1,0 +1,36 @@
+@font-face {
+  font-family: Nasa;
+  src: url('fonts/nasa.otf');
+}
+
+@font-face {
+  font-family: Bebas;
+  src: url('fonts/BebasNeue.ttf');
+}
+
+@font-face {
+  font-family: Mont_Bold;
+  src: url('fonts/Montserrat-Bold.otf');
+}
+
+@font-face {
+  font-family: Mont_Medium;
+  src: url('fonts/Montserrat-Medium.otf');
+}
+
+
+@font-face {
+  font-family: Mont_Light;
+  src: url('fonts/Montserrat-Thin.otf');
+}
+
+@font-face {
+  font-family: Corp_Games;
+  src: url('fonts/Corporation_Games.otf');
+}
+
+
+.app {
+  height: 80vh;
+  /* display: flex; */  
+}
