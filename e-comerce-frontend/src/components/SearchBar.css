@@ -1,39 +1,55 @@
-.navbar {
+.searchbar {
   font-family: 'Mont_Light';
   width: 100%;
-  height: 50px;
-  background-color: #171717;
+  height: 250px;  
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem 1rem;
+  padding: 2rem 1rem 2rem 1rem;
   z-index: 50;
+  
 }
 
-.navbar__logo h2 {
-  color: #f4f4f4;
+.searchbar__logo h2 {
+  color: gray;
   font-size: 1.4rem;
-  cursor: pointer;
+  cursor: pointer;  
 }
 
-.navbar__links {
+.searchBox{
+  background-color: transparent;
+  font-family: 'Mont_Medium';
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 5vh;
+  width: 10vw;
+}
+
+.imageHeader {
+
+  height: 25vh;  
+}
+
+.searchbar__links {
   display: flex;
   list-style: none;
   align-items: center;
 }
 
-.navbar__links > li {
+.searchbar__links > li {
   padding-left: 1.5rem;
 }
 
-.navbar__links > li > a {
+.searchbar__links > li > a {
   text-decoration: none;
   color: #f4f4f4;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
 }
-.navbar__links > li > p {
+.searchbar__links > li > p {
   text-decoration: none;
   color: #f4f4f4;
   font-size: 1.2rem;
@@ -42,30 +58,39 @@
   cursor: pointer;
 }
 
-.navbar__links > li > a > span {
+.searchbar__links > li > a > span {
   display: flex;
   align-items: center;
   margin-left: 8px;
 }
 
-.cart__link {
-  background: #333;
+.cart__link > span {
+  color: black;
+}
+
+.cart__link:hover {
+  background: transparent;
+}
+
+.cart__link > i {
+  color: black;
+}
+
+.cart__link {  
+  background: transparent;
   padding: 10px;
   border-radius: 8px;
 }
 
-.cart__link:hover {
-  background: #dd219e;
-  color: #f4f4f4;
-}
 
 .cartlogo__badge {
+  font-family: 'Mont_Bold';
   width: 30px;
   height: 30px;
-  background-color: #f4f4f4;
+  background-color: blue;
   border-radius: 50%;
   margin-left: 8px;
-  color: #171717;
+  color: white; 
   display: flex;
   justify-content: center;
   align-items: center;

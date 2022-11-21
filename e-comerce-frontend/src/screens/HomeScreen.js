@@ -33,7 +33,7 @@ const HomeScreen = () => {
   }, [dispatch])
 
   return (
-    <div className="homescreen">]
+    <div className="homescreen">
       <Header></Header>
       <h2 className="homescreen__title">Produtos em destaque</h2>      
       <div className="homescreen__products">

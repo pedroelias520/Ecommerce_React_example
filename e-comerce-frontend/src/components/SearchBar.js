@@ -1,8 +1,9 @@
-import './Navbar.css'
+import './SearchBar.css'
 import { Link, useHistory } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { useMemo } from 'react'
 import { logout } from '../utils/localstorage'
+import zeus_logo from '../images/zeus_logo.png'
 import { setInitialState } from '../redux/actions/userAction'
 
 const Navbar = ({ click }) => {
@@ -26,18 +27,25 @@ const Navbar = ({ click }) => {
   }
 
   return (
-    <nav className="navbar">
-      <div className="navbar__logo">
-        <h2>Informações sobre nossos produtos no whatsapp</h2>
+    <nav className="searchbar">
+      <div className="searchbar__logo">
+        <img
+          className='imageHeader'
+          src={zeus_logo}
+          alt="Sem imagem"
+        />
       </div>
 
-      {/*      
-      <ul className="navbar__links">
+      <input className='searchBox' placeholder='Buscar Produto'>
+        
+      </input>
+
+      <ul className="searchbar__links">
         <li>
           <Link to="/cart" className="cart__link">
             <i className="fas fa-shopping-cart"></i>
             <span>
-              Cart <span className="cartlogo__badge">{getCartCount()}</span>
+              <span className="cartlogo__badge">{getCartCount()}</span>
             </span>
           </Link>
         </li>
@@ -55,12 +63,12 @@ const Navbar = ({ click }) => {
             <p onClick={_handleLogout}>Logout</p>
           </li>
         )}
-      </ul> 
-        */}
+      </ul>
 
-      
-      
-      
+
+
+
+
 
       <div className="hamburger__menu" onClick={click}>
         <div></div>

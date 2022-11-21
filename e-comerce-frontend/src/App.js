@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 // Components
 import Navbar from './components/Navbar'
+import SearchBar from './components/SearchBar'
 import SideDrawer from './components/SideDrawer'
 import Backdrop from './components/Backdrop'
 
@@ -29,6 +30,7 @@ function App() {
   return (
     <Router>
       <Navbar click={() => setSideToggle(true)} />
+      <SearchBar></SearchBar>
       <SideDrawer show={sideToggle} click={() => setSideToggle(false)} />
       <Backdrop show={sideToggle} click={() => setSideToggle(false)} />
 
