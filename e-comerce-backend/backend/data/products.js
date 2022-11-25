@@ -1,56 +1,68 @@
 const products = [
   {
-    name: "PlayStation 5",
+    name: "Nike Air Force 1 High Green",
     imageUrl:
-      "https://firebasestorage.googleapis.com/v0/b/topburguerapp.appspot.com/o/playstation.png?alt=media&token=e75724e7-4a9d-4713-8c85-bea49034d3d6",
+      "https://firebasestorage.googleapis.com/v0/b/topburguerapp.appspot.com/o/Nile_AirForce1High.jpg?alt=media&token=93c44da0-85f3-4930-a22c-e5e9f73c6f9e",
     description:
-      "PlayStation 5 (PS5) is a home video game console developed by Sony Interactive Entertainment. Announced in 2019 as the successor to the PlayStation 4, the PS5 was released on November 12, 2020 in Australia, Japan, New Zealand, North America, Singapore, and South Korea, and November 19, 2020 onwards in other major markets except China and India.",
-    price: 499,
+      "O crocodilo verde: É o nome carinhoso dado a esse tênis depois de foi lançado em 2017, usaod por muitas estrelas do pop como Kayne West em 2018, uma excelente pedida pra usar com bermudas",
+    price: 249.99,    
+    discount: 0.2,
+    mark:"Nike",
     countInStock: 15,
   },
   {
-    name: "Iphone 12",
+    name: "Adidas Race Sport 01",
     imageUrl:
-      "https://firebasestorage.googleapis.com/v0/b/topburguerapp.appspot.com/o/iPhone.png?alt=media&token=a738d8ea-d92b-4674-b6ab-66666740d484",
+      "https://firebasestorage.googleapis.com/v0/b/topburguerapp.appspot.com/o/AdidasRace.jpg?alt=media&token=420402d4-6b4d-487c-bb38-b8867e3614db",
     description:
-      "Welcome to a new era of iPhone. Beautifully bright 6.1-inch Super Retina XDR display.1 Ceramic Shield with 4x better drop performance.2 Incredible low-light photography with Night mode on all cameras. Cinema-grade Dolby Vision video recording, editing, and playback. Powerful A14 Bionic chip. And new MagSafe accessories for easy attach and faster wireless charging.3 Let the fun begin.",
-    price: 1099,
+      "Uma ótima pedida pra quem quer um tenis para esportes e também para saidas casuais, além de bonito, extraordináriamente confortável",
+    price: 279.99,    
+    discount: 0.2,
+    mark:"Adidas",
     countInStock: 10,
   },
   {
-    name: "Cannon EOS-1D",
+    name: "Nike Chicago 01 Medium",
     imageUrl:
-      "https://firebasestorage.googleapis.com/v0/b/topburguerapp.appspot.com/o/canon.png?alt=media&token=1ce8223e-08b0-4452-ab50-0570b4d493f5",
+      "https://firebasestorage.googleapis.com/v0/b/topburguerapp.appspot.com/o/AirJordan1.png?alt=media&token=051b8bcc-22f2-45e5-bf71-75bb2c23a95c",
     description:
-      "The EOS-1D X combines speed with image quality, to create the next generation camera for professionals. Full frame 18 megapixel sensor with Dual “DIGIC 5+” processors sets the standard, and up to 12 frames per second shooting takes it beyond.",
-    price: 1300,
+      "Esse é um classico, independe de descrições, usado por Mickael Jordan em 1998 na NBA Series, é o querinho dos colecionadores",
+    price: 259.99,    
+    discount: 0.3,
+    mark:"Nike",
     countInStock: 5,
   },
   {
-    name: "Amazon Alexa",
+    name: "Fila 07's Sport Premium Edition",
     imageUrl:
-      "https://firebasestorage.googleapis.com/v0/b/topburguerapp.appspot.com/o/alexa.png?alt=media&token=db4d2534-8786-4369-93a0-4731cd2593ac",
+      "https://firebasestorage.googleapis.com/v0/b/topburguerapp.appspot.com/o/Fila_shoes.jpg?alt=media&token=2fcc5a3f-988b-4c83-9155-05f35bb96f8a",
     description:
-      "It is capable of voice interaction, music playback, making to-do lists, setting alarms, streaming podcasts, playing audiobooks, and providing weather, traffic, sports, and other real-time information, such as news. Alexa can also control several smart devices using itself as a home automation system.",
-    price: 50,
+      "Se me perguntassem um bom tenis para o dia a dia seria esse, com base de silicone vai trazer além de conforto, muito estilo para usar",
+    price: 79.99,    
+    discount: 0.0,
+    mark:"Fila",
     countInStock: 25,
   },
   {
-    name: "Audio Technica Headphones",
+    name: "Puma Sofride 2018",
     imageUrl:
-      "https://firebasestorage.googleapis.com/v0/b/topburguerapp.appspot.com/o/jbl.png?alt=media&token=d1acb0eb-e3de-489d-8c1b-bcd239cd7b71",
+      "https://firebasestorage.googleapis.com/v0/b/topburguerapp.appspot.com/o/PumaSofride.jfif?alt=media&token=77dc3ad1-d31b-491a-a852-d3d9d7a840d3",
     description:
-      "Outfitted with 45mm large-aperture dynamic drivers and an over-ear, closed-back design, the ATH-M50x headphones deliver clarity, deep bass, and extended bandwidth (15 Hz to 28 kHz) while isolating you from outside sounds.",
-    price: 233,
+      "Literalmente a resposta da Puma para a pergunta, 'qual tênis combinaria com qualquer ocasião??', ai está, elegancia e conforoto pra qualquer dia",
+    price: 229.99,    
+    discount: 0.2,
+    mark:"Puma",
     countInStock: 4,
   },
   {
-    name: "JBL FLIP 4",
+    name: "Adidas SuperStar 2016",
     imageUrl:
-      "https://firebasestorage.googleapis.com/v0/b/topburguerapp.appspot.com/o/JBL5.png?alt=media&token=b2d8fa0b-8860-41bf-8ad2-840a85714e50",
+      "https://firebasestorage.googleapis.com/v0/b/topburguerapp.appspot.com/o/AdidasShoes.jpg?alt=media&token=03f0bc3d-c010-431f-a781-f175621afa4c",
     description:
-      "JBL Flip 4 is the next generation in the award-winning Flip series; it is a portable Bluetooth speaker that delivers surprisingly powerful stereo sound. This compact speaker is powered by a 3000mAh rechargeable Li-ion battery that offers up to 12 hours of continuous, high-quality audio playtime.",
-    price: 140,
+      "'O salto alto, vai se deixar ser visto de longe', excelente pedida para pessoas mais baixas, o salto para alto, e o design simples, não deixa perceber que quer ganhar uns centimetros a mais",
+    price: 99.99,
+    discount: 0.1,
+    mark:"Adidas",
     countInStock: 10,
   },
 ];

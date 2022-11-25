@@ -1,0 +1,60 @@
+.carousel {
+    transition: all ease 2s;
+}
+
+.carousel-indicators {
+    display: flex;
+    align-items: center;    
+    height: 30px;    
+    border-radius: 80px;
+}
+
+.carousel-control-prev-icon {
+    border: 1px solid black;
+    background-color: black;    
+    border-radius: 20px;
+}
+
+.carousel-control-next-icon {
+    border: 1px solid black;
+    background-color: black;    
+    border-radius: 20px;
+}   
+
+.visually-hidden {
+    width: 10px;
+}
+
+.iconRows {
+    display: grid;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.iconMark img{
+    height: 20vw;
+}
+
+.iconMark {
+    padding: 1vh;
+}
+
+.puma {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.nike {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.adidas {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.fila {
+    grid-column: 4;
+    grid-row: 1;
+}

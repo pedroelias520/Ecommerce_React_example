@@ -1,7 +1,8 @@
+const { query } = require("express");
 const Product = require("../models/Product");
 
 const getProducts = async (req, res) => {
-  try {
+  try {    
     const products = await Product.find({});
     res.json(products);
   } catch (error) {
@@ -11,10 +12,19 @@ const getProducts = async (req, res) => {
 };
 
 const getProductById = async (req, res) => {
-  try {
+  try {    
     const product = await Product.findById(req.params.id);
-
     res.json(product);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Server Error" });
+  }
+};
+
+const getProductsByMark = async (req, res) => {
+  try {                
+    const products = await Product.find({mark:req.params.mark});
+    res.json(products);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Server Error" });
@@ -24,4 +34,5 @@ const getProductById = async (req, res) => {
 module.exports = {
   getProducts,
   getProductById,
+  getProductsByMark
 };

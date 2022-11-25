@@ -1,4 +1,5 @@
 import * as actionTypes from '../constants/productConstants'
+import * as actionTypesByMark from '../constants/productByMarkConstants'
 import axios from 'axios'
 import {Api} from '../../utils/Api'
 
@@ -21,6 +22,28 @@ export const getProducts = () => async dispatch => {
     })
   }
 }
+
+
+export const getProductsByMark = mark => async dispatch => {
+  try {
+    dispatch({type: actionTypes.GET_PRODUCTSBYMARK_REQUEST})
+
+    const {data} = await Api.getRequest(`/api/products/mark/${mark}`)    
+    dispatch({
+      type: actionTypes.GET_PRODUCTSBYMARK_SUCCESS,
+      payload: JSON.parse(data),      
+    })    
+  } catch (error) {
+    dispatch({
+      type: actionTypes.GET_PRODUCTSBYMARK_FAIL,
+      payload:
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message,
+    })
+  }
+}
+
 
 export const getProductDetails = id => async dispatch => {
   try {

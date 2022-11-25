@@ -7,6 +7,7 @@ import { cartReducer } from './reducers/cartReducers'
 import {
   getProductsReducer,
   getProductDetailsReducer,
+  getProductsByMarkReducer,
 } from './reducers/productReducers'
 import { getServicesReducer, getServiceDetailsReducer } from './reducers/serviceReducers'
 import { userReducer } from './reducers/userReducer'
@@ -17,6 +18,7 @@ const reducer = combineReducers({
   getServicesDetails: getServiceDetailsReducer,
   getProducts: getProductsReducer,
   getProductDetails: getProductDetailsReducer,
+  getProductsByMark: getProductsByMarkReducer,
   user: userReducer,
 })
 

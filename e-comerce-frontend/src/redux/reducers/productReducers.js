@@ -22,6 +22,29 @@ export const getProductsReducer = (state = { products: [] }, action) => {
   }
 };
 
+
+export const getProductsByMarkReducer = (state = { products: [] }, action) => {
+  switch (action.type) {
+    case actionTypes.GET_PRODUCTSBYMARK_REQUEST:
+      return {
+        loading: true,
+        products: [],
+      };
+    case actionTypes.GET_PRODUCTSBYMARK_SUCCESS:
+      return {
+        products: action.payload,
+        loading: false,
+      };
+    case actionTypes.GET_PRODUCTSBYMARK_FAIL:
+      return {
+        loading: false,
+        error: action.payload,
+      };
+    default:
+      return state;
+  }
+};
+
 export const getProductDetailsReducer = (state = { product: {} }, action) => {
   switch (action.type) {
     case actionTypes.GET_PRODUCT_DETAILS_REQUEST:
