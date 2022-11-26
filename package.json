@@ -1,0 +1,7 @@
+{
+    "scripts": {        
+        "server start": "cd ecommerce-backend && node backend/server.js",
+        "server dev": "cd ecommerce-backend && nodemon backend/server.js",
+        "server data:import": "cd ecommerce-backend && node backend/seederScript"
+    }
+}
